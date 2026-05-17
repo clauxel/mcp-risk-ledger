@@ -1,0 +1,10 @@
+MCP Risk Ledger MCP
+
+Paid remote MCP for server intake risk reports, tool review, approvals, and readiness.
+
+Website: https://mcpriskledger.clauxel.com/
+MCP endpoint: https://mcpriskledger.clauxel.com/mcp
+Server card: https://mcpriskledger.clauxel.com/.well-known/mcp/server-card.json
+Registry name: com.clauxel.mcpriskledger/mcpriskledger-mcp
+Auth: Authorization: Bearer <token> after checkout and token claim.
+Boundary: read-only fixed tools for MCP risk review; no arbitrary shell, arbitrary SQL, deployment, deletion, or payment configuration tools.
