@@ -1,0 +1,38 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.clauxel.mcpriskledger/mcpriskledger-mcp",
+  "title": "MCP Risk Ledger MCP",
+  "description": "Paid remote MCP for server intake risk reports, tool review, approvals, and readiness.",
+  "version": "0.1.0",
+  "websiteUrl": "https://mcpriskledger.clauxel.com/",
+  "icons": [
+    {
+      "src": "https://mcpriskledger.clauxel.com/favicon.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": [
+        "any"
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcpriskledger.clauxel.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token issued after checkout and MCP token claim.",
+          "isRequired": true,
+          "isSecret": true,
+          "placeholder": "Bearer <token>"
+        }
+      ]
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "serverCardUrl": "https://mcpriskledger.clauxel.com/.well-known/mcp/server-card.json",
+      "accessModel": "paid_mcp_bearer_token"
+    }
+  }
+}
