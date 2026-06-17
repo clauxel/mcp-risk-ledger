@@ -1,0 +1,24 @@
+{
+  "brand": "MCP Risk Ledger",
+  "domain": "mcpriskledger.clauxel.com",
+  "tagline": "Risk intake and approval evidence for teams reviewing MCP servers, tools, permissions, and release gates.",
+  "description": "Risk intake and approval evidence for teams reviewing MCP servers, tools, permissions, and release gates.",
+  "audience": "security reviewers, agent platform owners, and teams approving third-party MCP tools",
+  "pages": [
+    [
+      "mcp-risk-assessment",
+      "MCP risk assessment for agent tools",
+      "Review remote MCP servers for auth, scope, tool behavior, data exposure, and operational risk."
+    ],
+    [
+      "mcp-server-risk-ledger",
+      "MCP server risk ledger",
+      "Keep a structured ledger of server intake decisions, exceptions, approvals, and re-review triggers."
+    ],
+    [
+      "mcp-tool-approval",
+      "MCP tool approval workflow",
+      "Create an approval path for tool schemas, permissions, audit logs, and agent execution boundaries."
+    ]
+  ]
+}

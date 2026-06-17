@@ -1,0 +1,17 @@
+name = "mcpriskledger-hotword-pages"
+main = "worker/hotwords.js"
+compatibility_date = "2026-06-17"
+workers_dev = true
+routes = [
+  { pattern = "mcpriskledger.clauxel.com/mcp-risk-assessment*", zone_name = "clauxel.com" },
+  { pattern = "mcpriskledger.clauxel.com/mcp-server-risk-ledger*", zone_name = "clauxel.com" },
+  { pattern = "mcpriskledger.clauxel.com/mcp-tool-approval*", zone_name = "clauxel.com" },
+  { pattern = "mcpriskledger.clauxel.com/sitemap.xml*", zone_name = "clauxel.com" },
+  { pattern = "mcpriskledger.clauxel.com/robots.txt*", zone_name = "clauxel.com" },
+  { pattern = "mcpriskledger.clauxel.com/llms.txt*", zone_name = "clauxel.com" }
+]
+
+[assets]
+directory = "./public-hotwords"
+binding = "ASSETS"
+run_worker_first = true
